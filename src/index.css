@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Flowzy Manager Design System - Futuristic Tech Style */
+
+@layer base {
+  :root {
+    /* Tech Background Colors */
+    --background: 240 10% 6%;
+    --foreground: 0 0% 98%;
+    --background-light: 240 8% 12%;
+    --background-card: 240 10% 8%;
+
+    /* Flowzy Brand Colors */
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 210 100% 40%;
+    
+    /* Neon Blue Accent */
+    --neon: 180 100% 50%;
+    --neon-glow: 180 100% 60%;
+    --neon-dark: 180 100% 40%;
+    
+    /* Supporting Colors */
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 0 0% 90%;
+    
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 60%;
+    
+    --accent: 220 15% 25%;
+    --accent-foreground: 0 0% 95%;
+    
+    /* Gray Scale */
+    --gray-50: 220 20% 95%;
+    --gray-100: 220 15% 85%;
+    --gray-200: 220 15% 75%;
+    --gray-300: 220 15% 65%;
+    --gray-400: 220 15% 50%;
+    --gray-500: 220 15% 40%;
+    --gray-600: 220 15% 30%;
+    --gray-700: 220 15% 20%;
+    --gray-800: 220 15% 15%;
+    --gray-900: 220 20% 10%;
+
+    /* System Colors */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(180deg, hsl(240 10% 6%) 0%, hsl(240 8% 12%) 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Adicionar animações para o header */
+  .bg-gradient-neon {
+    background: linear-gradient(135deg, hsl(180 100% 50%) 0%, hsl(210 100% 50%) 100%);
+  }
+
+  /* Gradiente para o hero */
+  .bg-gradient-hero {
+    background: linear-gradient(180deg, hsl(240 10% 6%) 0%, hsl(240 8% 12%) 100%);
+  }
+  
+  .tech-glow {
+    box-shadow: 0 0 30px hsl(210 100% 50% / 0.3);
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 40px hsl(180 100% 50% / 0.4);
+  }
+
+  .shadow-glow-neon {
+    box-shadow: 0 0 40px hsl(180 100% 50% / 0.4);
+  }
+
+  .animate-pulse-neon {
+    animation: pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .tech-card {
+    background: hsl(var(--background-card));
+    border: 1px solid hsl(var(--gray-700));
+    box-shadow: 0 4px 20px hsl(240 10% 6% / 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .tech-card:hover {
+    border-color: hsl(var(--neon));
+    box-shadow: 0 0 40px hsl(180 100% 50% / 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(180 100% 50%) 0%, hsl(210 100% 50%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Keyframes para animações */
+  @keyframes pulse-neon {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  /* Smooth transitions for all interactive elements */
+  .tech-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .tech-card:hover {
+    transform: translateY(-4px);
+  }
+}
