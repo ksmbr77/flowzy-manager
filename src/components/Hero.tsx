@@ -48,16 +48,16 @@ const Hero = () => {
             {/* Trust Indicators - Card Style */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-6 sm:pt-8 max-w-lg mx-auto lg:mx-0">
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">
-                <div className="text-lg sm:text-xl font-bold text-neon">Gestão</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Completa</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Automação Total</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">WhatsApp + CRM + Vendas</div>
               </div>
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">
-                <div className="text-lg sm:text-xl font-bold text-neon">WhatsApp</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">+ Produtividade</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Zero Trabalho Manual</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">IA cuida de tudo</div>
               </div>
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">  
-                <div className="text-sm sm:text-base font-bold text-neon">Primeiros 8 na lista</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">14 dias grátis</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Acesso Antecipado</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Primeiros 8 usuários grátis</div>
               </div>
             </div>
           </AnimatedSection>
