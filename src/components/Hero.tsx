@@ -48,16 +48,16 @@ const Hero = () => {
             {/* Trust Indicators - Card Style */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-6 sm:pt-8 max-w-lg mx-auto lg:mx-0">
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">
-                <div className="text-sm sm:text-base font-bold text-neon">Automação Total</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">WhatsApp + CRM + Vendas</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Inteligência Real</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Não é robô, é Flowzy cuidando</div>
               </div>
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">
-                <div className="text-sm sm:text-base font-bold text-neon">Zero Trabalho Manual</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">IA cuida de tudo</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Tudo Automatizado</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">WhatsApp, CRM e Vendas integrados</div>
               </div>
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">  
-                <div className="text-sm sm:text-base font-bold text-neon">Acesso Antecipado</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Primeiros 8 usuários grátis</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Teste Gratuito</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">14 dias para os primeiros 8</div>
               </div>
             </div>
           </AnimatedSection>
