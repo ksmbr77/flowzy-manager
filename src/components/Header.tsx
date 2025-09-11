@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-gray-700/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-gray-700/50 accelerated transition-all duration-300">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
           {/* Logo */}
@@ -83,8 +83,8 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-700/50 animate-fade-in">
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="py-4 border-t border-gray-700/50">
             <nav className="flex flex-col gap-4">
               <a 
                 href="#problemas" 
@@ -124,7 +124,7 @@ const Header = () => {
               </Button>
             </nav>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );

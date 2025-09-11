@@ -1,4 +1,5 @@
 import { MessageSquare, Users, Zap } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const benefits = [
   {
@@ -22,7 +23,7 @@ const Benefits = () => {
   return (
     <section id="beneficios" className="py-12 sm:py-16 lg:py-20 xl:py-24 relative">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+        <AnimatedSection className="text-center mb-8 sm:mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight">
             O que empresas de{" "}
             <span className="gradient-text">sucesso</span> fazem diferente
@@ -30,16 +31,17 @@ const Benefits = () => {
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-4xl mx-auto px-2 sm:px-4 leading-relaxed">
             Gestão de equipe que média e pequenas empresas usam para triplicar vendas no whatsapp.
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <div 
-                key={index} 
-                className="tech-card p-4 sm:p-6 lg:p-8 text-center group animate-fade-in-up"
-                style={{ animationDelay: `${index * 150}ms` }}
+              <AnimatedSection
+                key={index}
+                delay={index * 200}
+                animation="scale-in"
+                className="tech-card p-4 sm:p-6 lg:p-8 text-center group accelerated"
               >
                 <div className="relative inline-block mb-3 sm:mb-4 lg:mb-6">
                   <div className="absolute inset-0 bg-neon/20 rounded-full blur-xl group-hover:bg-neon/30 transition-all duration-300"></div>
@@ -55,7 +57,7 @@ const Benefits = () => {
                 <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
-              </div>
+              </AnimatedSection>
             );
           })}
         </div>

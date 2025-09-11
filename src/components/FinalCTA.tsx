@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, Zap } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const FinalCTA = () => {
   return (
@@ -12,7 +13,7 @@ const FinalCTA = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <AnimatedSection className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-neon/20 text-neon px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 lg:mb-8">
             <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
             Lançamento em breve • Vagas limitadas
@@ -88,7 +89,7 @@ const FinalCTA = () => {
           </div>
 
           {/* Trust Signal */}
-          <div className="mt-8 sm:mt-12 p-4 sm:p-6 tech-card max-w-2xl mx-auto">
+          <div className="mt-8 sm:mt-12 p-4 sm:p-6 tech-card max-w-2xl mx-auto accelerated">
             <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
               "Estamos desenvolvendo a solução mais completa e intuitiva do mercado. 
               Seja parte dessa jornada desde o início."
@@ -103,7 +104,7 @@ const FinalCTA = () => {
               </div>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

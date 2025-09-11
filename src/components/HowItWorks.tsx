@@ -1,4 +1,5 @@
 import { Smartphone, Settings, TrendingUp } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const steps = [
   {
@@ -25,14 +26,14 @@ const HowItWorks = () => {
   return (
     <section id="como-funciona" className="py-12 sm:py-16 lg:py-20 xl:py-24 relative bg-background-light">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+        <AnimatedSection className="text-center mb-8 sm:mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight">
             Como <span className="gradient-text">funciona</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
             Em apenas 3 passos você descobrirá por que outras empresas estão vendendo 3x mais.
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="relative">
           {/* Connection Lines */}
@@ -42,10 +43,11 @@ const HowItWorks = () => {
             {steps.map((step, index) => {
               const IconComponent = step.icon;
               return (
-                <div 
-                  key={index} 
-                  className="relative group animate-fade-in-up"
-                  style={{ animationDelay: `${index * 200}ms` }}
+                <AnimatedSection
+                  key={index}
+                  delay={index * 200}
+                  animation="slide-up"
+                  className="relative group"
                 >
                   {/* Step Number */}
                   <div className="absolute -top-4 sm:-top-6 left-1/2 transform -translate-x-1/2">
@@ -79,7 +81,7 @@ const HowItWorks = () => {
                       </svg>
                     </div>
                   )}
-                </div>
+                </AnimatedSection>
               );
             })}
           </div>

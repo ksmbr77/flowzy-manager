@@ -1,9 +1,11 @@
 import { Instagram, Mail } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Footer = () => {
   return (
     <footer className="py-6 sm:py-8 lg:py-12 bg-background-card border-t border-gray-700">
       <div className="container mx-auto px-4 sm:px-6">
+        <AnimatedSection>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-center">
           {/* Logo and Brand */}
           <div className="text-center sm:text-left">
@@ -60,6 +62,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        </AnimatedSection>
 
         {/* Bottom Border */}
         <div className="mt-4 sm:mt-6 lg:mt-8 pt-4 sm:pt-6 lg:pt-8 border-t border-gray-700/50 text-center">

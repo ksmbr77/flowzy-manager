@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10 py-6 sm:py-8">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-4 sm:space-y-6 text-left lg:text-left">
+          <AnimatedSection animation="slide-up" className="space-y-4 sm:space-y-6 text-left lg:text-left">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-tight">
                 Transforme o WhatsApp da sua empresa em uma{" "}
@@ -59,10 +60,10 @@ const Hero = () => {
                 <div className="text-xs sm:text-sm text-muted-foreground font-medium">14 dias grátis</div>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
 
           {/* Right Content - Dashboard Mockup */}
-          <div className="relative mt-8 lg:mt-0">
+          <AnimatedSection animation="scale-in" delay={200} className="relative mt-8 lg:mt-0">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-neon opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500 rounded-2xl"></div>
               <div className="relative tech-card rounded-2xl overflow-hidden">
@@ -81,7 +82,7 @@ const Hero = () => {
                 <span className="text-neon font-semibold">Online</span>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
