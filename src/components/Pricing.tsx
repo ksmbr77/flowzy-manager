@@ -112,11 +112,11 @@ const Pricing = () => {
                   asChild
                 >
                   <a 
-                    href="https://form.respondi.app/GNMe66Jr"
+                    href={plan.price === "Custom" ? "https://wa.me/5511999999999" : "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {plan.price === "Custom" ? "Falar com Vendas" : "Começar Agora"}
+                    {plan.price === "Custom" ? "Falar com Vendas" : "Teste Grátis por 14 Dias"}
                   </a>
                 </Button>
 

@@ -17,30 +17,38 @@ const Hero = () => {
           <AnimatedSection animation="slide-up" className="space-y-4 sm:space-y-6 text-left lg:text-left">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-tight">
-                Transforme o WhatsApp da sua empresa em uma{" "}
-                <span className="gradient-text block mt-1">Máquina de Vendas Previsíveis</span>
+                Transforme seu WhatsApp em uma{" "}
+                <span className="gradient-text block mt-1">Máquina de Vendas que Funciona 24/7</span>
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg lg:text-lg text-muted-foreground max-w-2xl lg:mx-0 leading-relaxed mt-4">
-                Entre agora para a lista de espera e tenha acesso ao que a concorrência não quer que você descubra.
+                Pare de perder leads e dinheiro. Automatize vendas, qualifique clientes e feche mais negócios com IA real.
               </p>
             </div>
 
-            <div className="flex lg:justify-start pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 lg:justify-start pt-4">
               <Button 
                 variant="neon" 
                 size="xl"
-                className="group text-sm sm:text-base lg:text-lg font-bold w-full max-w-sm h-12 sm:h-14"
+                className="group text-sm sm:text-base lg:text-lg font-bold h-12 sm:h-14"
                 asChild
               >
                 <a 
-                  href="https://form.respondi.app/GNMe66Jr"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#pricing"
                   className="flex items-center justify-center gap-3"
                 >
-                  Entre na lista de espera
+                  Começar Teste Grátis
                   <ArrowRight className="group-hover:translate-x-1 transition-transform w-4 h-4 sm:w-5 sm:h-5" />
+                </a>
+              </Button>
+              <Button 
+                variant="outline" 
+                size="xl"
+                className="text-sm sm:text-base lg:text-lg font-semibold h-12 sm:h-14 border-2"
+                asChild
+              >
+                <a href="#demo">
+                  Ver Demo
                 </a>
               </Button>
             </div>
@@ -48,16 +56,16 @@ const Hero = () => {
             {/* Trust Indicators - Card Style */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-6 sm:pt-8 max-w-lg mx-auto lg:mx-0">
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">
-                <div className="text-sm sm:text-base font-bold text-neon">Inteligência Real</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Não é robô, é Flowzy cuidando</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Setup em 5 min</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Conecte e comece a vender hoje</div>
               </div>
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">
-                <div className="text-sm sm:text-base font-bold text-neon">Tudo Automatizado</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">WhatsApp, CRM e Vendas integrados</div>
+                <div className="text-sm sm:text-base font-bold text-neon">14 dias grátis</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Teste sem compromisso</div>
               </div>
               <div className="tech-card p-3 sm:p-4 rounded-lg text-center">  
-                <div className="text-sm sm:text-base font-bold text-neon">Teste Gratuito</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">14 dias para os primeiros 8</div>
+                <div className="text-sm sm:text-base font-bold text-neon">Cancele quando quiser</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Sem fidelidade ou multas</div>
               </div>
             </div>
           </AnimatedSection>
