@@ -1,113 +1,110 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Headphones, Shield } from "lucide-react";
+import { ArrowRight, Clock, Users, Zap } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const FinalCTA = () => {
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden bg-gradient-hero">
-      {/* Animated Background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-neon/30 to-primary/30 animate-pulse-neon"></div>
+    <section className="py-12 sm:py-16 lg:py-20 xl:py-24 relative overflow-hidden bg-gradient-hero">
+      {/* Background Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-neon/10 via-primary/5 to-transparent"></div>
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 bg-neon/20 rounded-full blur-3xl animate-pulse-neon"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-primary/15 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <AnimatedSection animation="scale-in" className="text-center space-y-6 sm:space-y-8">
-            {/* Main Headline */}
-            <div className="space-y-4">
-              <div className="inline-block">
-                <span className="bg-gradient-neon text-background text-xs sm:text-sm font-bold px-4 py-2 rounded-full">
-                  ⚡ Oferta por Tempo Limitado
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                Comece a Vender Mais{" "}
-                <span className="gradient-text block mt-2">Ainda Hoje</span>
-              </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Configure em 5 minutos. Veja resultados em 24 horas. Sem cartão de crédito necessário.
-              </p>
-            </div>
+        <AnimatedSection className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-neon/20 text-neon px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 lg:mb-8">
+            <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
+            Lançamento em breve • Vagas limitadas
+          </div>
 
-            {/* CTA Button */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button 
-                variant="neon" 
-                size="xl"
-                className="group text-base sm:text-lg lg:text-xl font-bold h-14 sm:h-16 px-8 sm:px-12"
-                asChild
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 lg:mb-8 px-2 sm:px-4 leading-tight">
+            Seja um dos primeiros a testar o{" "}
+            <span className="gradient-text">Flowzy</span>
+          </h2>
+          
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
+            Entre na lista de espera e garanta acesso antecipado à revolução do atendimento via WhatsApp.
+            <span className="block mt-2 sm:mt-3 lg:mt-4 text-neon font-semibold">
+              Primeiros 8 usuários ganham 14 dias de teste grátis!
+            </span>
+          </p>
+
+          <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6 justify-center items-center mb-6 sm:mb-8 lg:mb-12">
+            <Button 
+              variant="neon" 
+              size="xl"
+              className="group text-sm sm:text-base lg:text-lg font-bold w-full max-w-sm h-12 sm:h-14"
+              asChild
+            >
+              <a 
+                href="https://form.respondi.app/GNMe66Jr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3"
               >
-                <a 
-                  href="#pricing"
-                  className="flex items-center gap-3"
-                >
-                  Começar Meus 14 Dias Grátis
-                  <ArrowRight className="group-hover:translate-x-1 transition-transform w-5 h-5" />
-                </a>
-              </Button>
+                Entrar na lista de espera
+                <ArrowRight className="group-hover:translate-x-1 transition-transform w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+            </Button>
+            
+            <div className="flex items-center gap-2 text-muted-foreground text-xs sm:text-sm lg:text-base">
+              <Users className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-neon" />
+              <span>Primeiros 8 usuários ganham 14 dias grátis</span>
             </div>
+          </div>
 
-            <p className="text-sm text-muted-foreground">
-              🎁 Bônus exclusivo: Treinamento completo da equipe (valor R$ 997) grátis
-            </p>
-
-            {/* Trust Badges */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8 max-w-3xl mx-auto">
-              <AnimatedSection animation="fade-in" delay={200}>
-                <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-neon/20 to-primary/20 flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-neon" />
-                  </div>
-                  <div className="text-sm font-semibold">Setup Instantâneo</div>
-                  <div className="text-xs text-muted-foreground">Pronto em 5 minutos</div>
-                </div>
-              </AnimatedSection>
-
-              <AnimatedSection animation="fade-in" delay={300}>
-                <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-neon/20 to-primary/20 flex items-center justify-center">
-                    <Headphones className="w-6 h-6 text-neon" />
-                  </div>
-                  <div className="text-sm font-semibold">Suporte Dedicado</div>
-                  <div className="text-xs text-muted-foreground">Time disponível 24/7</div>
-                </div>
-              </AnimatedSection>
-
-              <AnimatedSection animation="fade-in" delay={400}>
-                <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-neon/20 to-primary/20 flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-neon" />
-                  </div>
-                  <div className="text-sm font-semibold">Garantia 30 Dias</div>
-                  <div className="text-xs text-muted-foreground">100% do dinheiro de volta</div>
-                </div>
-              </AnimatedSection>
-            </div>
-
-            {/* Social Proof */}
-            <AnimatedSection animation="fade-in" delay={500}>
-              <div className="tech-card rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto mt-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-neon flex-shrink-0"></div>
-                  <div className="text-left">
-                    <p className="text-base sm:text-lg italic text-foreground mb-3">
-                      "Testamos o Flowzy sem expectativa. Em 2 semanas fechamos 40% mais negócios com a mesma equipe. Hoje não vivemos sem."
-                    </p>
-                    <div className="text-sm font-semibold text-neon">André Martins</div>
-                    <div className="text-xs text-muted-foreground">CEO, VendasPro - 47 funcionários</div>
-                  </div>
-                </div>
+          {/* Feature Highlights */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 xl:gap-8 max-w-4xl mx-auto px-2 sm:px-4">
+            <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-4">
+              <div className="bg-neon/20 p-1.5 sm:p-2 rounded-lg flex-shrink-0">
+                <Zap className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-neon" />
               </div>
-            </AnimatedSection>
-
-            {/* Final Urgency */}
-            <div className="pt-4">
-              <p className="text-sm text-muted-foreground">
-                ⏰ Mais de 200 empresas já automatizaram suas vendas este mês
-              </p>
+              <div className="text-left">
+                <div className="font-semibold text-xs sm:text-sm lg:text-base">Setup em 5 minutos</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Configuração rápida</div>
+              </div>
             </div>
-          </AnimatedSection>
-        </div>
+
+            <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-4">
+              <div className="bg-neon/20 p-1.5 sm:p-2 rounded-lg flex-shrink-0">
+                <Users className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-neon" />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-xs sm:text-sm lg:text-base">Suporte dedicado</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Onboarding personalizado</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-4 sm:col-span-2 lg:col-span-1">
+              <div className="bg-neon/20 p-1.5 sm:p-2 rounded-lg flex-shrink-0">
+                <Clock className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-neon" />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-xs sm:text-sm lg:text-base">Garantia 30 dias</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Risco zero</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Trust Signal */}
+          <div className="mt-8 sm:mt-12 p-4 sm:p-6 tech-card max-w-2xl mx-auto accelerated">
+            <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
+              "Estamos desenvolvendo a solução mais completa e intuitiva do mercado. 
+              Seja parte dessa jornada desde o início."
+            </p>
+            <div className="flex items-center justify-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-neon rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base">
+                F
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-sm sm:text-base">Equipe Flowzy</div>
+                <div className="text-xs sm:text-sm text-neon">Fundadores</div>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
