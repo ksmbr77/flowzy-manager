@@ -7,11 +7,11 @@ const Problems = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-8 sm:mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight">
-            Por que empresas estão{" "}
-            <span className="gradient-text">perdendo clientes</span>?
+            Sua Empresa Está{" "}
+            <span className="gradient-text">Perdendo R$ 50 mil+</span> por Mês
           </h2>
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-4xl mx-auto px-2 sm:px-4 leading-relaxed">
-            Descubra os 3 erros fatais que fazem você perder vendas no WhatsApp todos os dias
+            E você nem percebe. Veja como isso acontece todo santo dia:
           </p>
         </AnimatedSection>
 
