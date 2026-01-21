@@ -19,7 +19,7 @@ const FinalCTA = () => {
           </h2>
           
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Junte-se a centenas de empresas que transformaram caos em resultados previsíveis
+            Junte-se às primeiras empresas pioneiras que estão transformando caos em resultados previsíveis
           </p>
 
           <Button 
@@ -32,7 +32,7 @@ const FinalCTA = () => {
               href="#precos"
               className="flex items-center justify-center gap-3"
             >
-              Começar Teste Grátis de 7 Dias
+              Assinar Agora
               <ArrowRight className="group-hover:translate-x-1 transition-transform w-5 h-5 sm:w-6 sm:h-6" />
             </a>
           </Button>
@@ -40,8 +40,8 @@ const FinalCTA = () => {
           {/* Trust Elements */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8 sm:mt-10">
             {[
-              "Teste por 7 dias grátis",
-              "Suporte exclusivo incluso",
+              "7 dias grátis (primeiras 8 empresas)",
+              "Suporte via WhatsApp",
               "Acesso ao grupo VIP"
             ].map((badge, index) => (
               <div key={index} className="flex items-center gap-2 text-sm sm:text-base text-muted-foreground">

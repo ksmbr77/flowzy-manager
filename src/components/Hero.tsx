@@ -27,8 +27,8 @@ const Hero = () => {
               </h1>
               
               <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                A plataforma completa para transformar seu atendimento em vendas organizadas e previsíveis. 
-                <span className="text-neon font-medium"> Teste grátis por 7 dias.</span>
+                A plataforma completa para transformar seu atendimento em vendas organizadas e previsíveis.
+                <span className="text-neon font-medium"> 7 dias grátis para as primeiras 8 empresas.</span>
               </p>
             </div>
 
@@ -44,7 +44,7 @@ const Hero = () => {
                   href="#precos"
                   className="flex items-center justify-center gap-3"
                 >
-                  Começar Teste Grátis
+                  Assinar Plano
                   <ArrowRight className="group-hover:translate-x-1 transition-transform w-5 h-5" />
                 </a>
               </Button>
@@ -68,8 +68,8 @@ const Hero = () => {
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start pt-4">
               {[
-                "7 dias grátis",
-                "Suporte exclusivo",
+                "7 dias grátis (primeiras 8 empresas)",
+                "Suporte via WhatsApp",
                 "Grupo VIP incluso"
               ].map((badge, index) => (
                 <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
