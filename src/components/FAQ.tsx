@@ -9,15 +9,15 @@ import AnimatedSection from "@/components/AnimatedSection";
 const faqs = [
   {
     question: "Como funciona o teste grátis de 7 dias?",
-    answer: "Você tem acesso completo a todas as funcionalidades do plano escolhido por 7 dias. Sem compromisso, sem pegadinhas. Se não gostar, é só cancelar antes do prazo."
+    answer: "As primeiras 8 empresas têm acesso completo a todas as funcionalidades do plano escolhido por 7 dias. Sem compromisso, sem pegadinhas. Se não gostar, é só cancelar antes do prazo."
   },
   {
     question: "Preciso cadastrar cartão de crédito para testar?",
     answer: "Não! Você pode iniciar o teste grátis sem precisar cadastrar nenhum dado de pagamento. Só cobramos quando você decidir continuar após os 7 dias."
   },
   {
-    question: "Como funciona o suporte exclusivo?",
-    answer: "Nossa equipe de especialistas está disponível para tirar dúvidas, ajudar na configuração e otimizar seus resultados. Atendimento humanizado via WhatsApp e email."
+    question: "Como funciona o suporte via WhatsApp?",
+    answer: "Nossa equipe de especialistas está disponível para tirar dúvidas, ajudar na configuração e otimizar seus resultados. Atendimento humanizado via WhatsApp."
   },
   {
     question: "O que é o grupo exclusivo VIP?",

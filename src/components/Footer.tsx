@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/lovable-uploads/9cb8132b-0fe4-41b3-8fa6-f69172fc9ab2.png"
+                src="/lovable-uploads/flowzy-logo.png"
                 alt="Flowzy Manager Logo"
                 className="w-10 h-10"
               />
@@ -85,7 +85,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-gray-700/50 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
-            © 2025 Flowzy Manager. Todos os direitos reservados.
+            © 2026 Flowzy Manager. Todos os direitos reservados.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-muted-foreground">

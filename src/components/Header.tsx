@@ -26,7 +26,7 @@ const Header = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-neon opacity-30 blur-xl group-hover:opacity-50 transition-opacity duration-500 rounded-lg"></div>
               <img 
-                src="/lovable-uploads/9cb8132b-0fe4-41b3-8fa6-f69172fc9ab2.png"
+                src="/lovable-uploads/flowzy-logo.png"
                 alt="Flowzy Manager Logo"
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-11 lg:h-11 relative z-10 group-hover:scale-110 transition-transform duration-300"
               />

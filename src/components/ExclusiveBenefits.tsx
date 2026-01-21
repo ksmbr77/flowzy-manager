@@ -1,11 +1,11 @@
-import { Headphones, Users, Sparkles } from "lucide-react";
+import { MessageCircle, Users, Sparkles } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const exclusiveBenefits = [
   {
-    icon: Headphones,
-    title: "Suporte Exclusivo",
-    description: "Acesso direto à nossa equipe de especialistas para tirar dúvidas e otimizar seus resultados."
+    icon: MessageCircle,
+    title: "Suporte via WhatsApp",
+    description: "Acesso direto à nossa equipe de especialistas pelo WhatsApp para tirar dúvidas e otimizar seus resultados."
   },
   {
     icon: Users,

@@ -13,9 +13,9 @@ const plans = [
       "Organização completa",
       "Pipeline de vendas",
       "Atendimento profissional",
-      "Suporte via email"
+      "Suporte via WhatsApp"
     ],
-    cta: "Testar 7 Dias Grátis",
+    cta: "Assinar Starter",
     highlighted: false
   },
   {
@@ -28,11 +28,11 @@ const plans = [
       "Tudo do Starter +",
       "Automações avançadas",
       "Analytics e relatórios",
-      "Suporte exclusivo",
+      "Suporte prioritário via WhatsApp",
       "Grupo exclusivo VIP",
       "Integrações premium"
     ],
-    cta: "Testar 7 Dias Grátis",
+    cta: "Assinar Professional",
     highlighted: true,
     badge: "Mais Popular"
   },
@@ -65,11 +65,11 @@ const Pricing = () => {
             <span className="gradient-text">sua empresa</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Teste qualquer plano grátis por 7 dias. Pagamento seguro via Stripe.
+            7 dias grátis para as primeiras 8 empresas. Pagamento seguro via Stripe.
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <AnimatedSection
               key={index}
@@ -118,7 +118,7 @@ const Pricing = () => {
                   }`}
                   asChild
                 >
-                  <a href={plan.name === "Enterprise" ? "https://wa.me/5511999999999" : "#"}>
+                  <a href={plan.name === "Enterprise" ? "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o plano Enterprise do Flowzy Manager" : "#"}>
                     {plan.cta}
                   </a>
                 </Button>
@@ -130,7 +130,7 @@ const Pricing = () => {
         {/* Trust Badges */}
         <AnimatedSection delay={400} className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-12 sm:mt-16">
           {[
-            "7 dias grátis para testar",
+            "7 dias grátis (primeiras 8 empresas)",
             "Pagamento seguro via Stripe",
             "Cancele quando quiser"
           ].map((badge, index) => (

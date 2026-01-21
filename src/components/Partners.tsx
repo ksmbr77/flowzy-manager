@@ -22,7 +22,7 @@ const Partners = () => {
           </div>
           
           <p className="text-xs sm:text-sm text-muted-foreground mt-6 sm:mt-8">
-            <span className="text-neon font-semibold">Mais de 500 empresas</span> vendendo de forma organizada
+            <span className="text-neon font-semibold">8 empresas pioneiras</span> já organizando suas vendas
           </p>
         </AnimatedSection>
       </div>
