@@ -1,35 +1,50 @@
-import { MessageSquare, Users, Zap } from "lucide-react";
+import { FolderKanban, TrendingUp, HeartHandshake, Bot, BarChart3, Users } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const benefits = [
   {
-    icon: MessageSquare,
-    title: "Nunca mais perca uma conversa",
-    description: "Imagine ter controle total sobre cada cliente que te procura. Zero leads perdidos."
+    icon: FolderKanban,
+    title: "Organização Total",
+    description: "Todos os atendimentos, conversas e negócios perfeitamente organizados em um sistema intuitivo."
+  },
+  {
+    icon: TrendingUp,
+    title: "Vendas Estruturadas",
+    description: "Pipeline visual, follow-ups automáticos e processo comercial que realmente funciona."
+  },
+  {
+    icon: HeartHandshake,
+    title: "Atendimento Excelente",
+    description: "Responda rápido, nunca perca mensagens e ofereça experiência premium aos seus clientes."
+  },
+  {
+    icon: Bot,
+    title: "Automação Inteligente",
+    description: "Automatize tarefas repetitivas, respostas padrão e follow-ups sem perder o toque pessoal."
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics Completo",
+    description: "Dashboards em tempo real para acompanhar métricas, conversões e performance da equipe."
   },
   {
     icon: Users,
-    title: "Sua equipe sempre organizada", 
-    description: "Organização no fluxo de leads, acompanhamento em tempo real e gestão de performance que realmente funciona."
-  },
-  {
-    icon: Zap,
-    title: "Automação Empresarial Completa",
-    description: "Da captação ao pós-venda, tudo automatizado. Sua empresa cresce enquanto você foca no estratégico."
+    title: "Gestão de Equipe",
+    description: "Distribua conversas, monitore atendimentos e escale sua operação com facilidade."
   }
 ];
 
 const Benefits = () => {
   return (
-    <section id="beneficios" className="py-12 sm:py-16 lg:py-20 xl:py-24 relative">
-      <div className="container mx-auto px-4 sm:px-6">
-        <AnimatedSection className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight">
-            O que empresas de{" "}
-            <span className="gradient-text">sucesso</span> fazem diferente
+    <section id="recursos" className="py-16 sm:py-20 lg:py-24 xl:py-32 relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+            Tudo que você precisa em{" "}
+            <span className="gradient-text">um só lugar</span>
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-4xl mx-auto px-2 sm:px-4 leading-relaxed">
-            Gestão de equipe que média e pequenas empresas usam para triplicar vendas no whatsapp.
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Organização, vendas e atendimento integrados no WhatsApp
           </p>
         </AnimatedSection>
 
@@ -39,22 +54,22 @@ const Benefits = () => {
             return (
               <AnimatedSection
                 key={index}
-                delay={index * 200}
+                delay={index * 100}
                 animation="scale-in"
-                className="tech-card p-4 sm:p-6 lg:p-8 text-center group accelerated"
+                className="tech-card p-6 sm:p-8 group hover:border-neon/50 transition-all duration-300"
               >
-                <div className="relative inline-block mb-3 sm:mb-4 lg:mb-6">
-                  <div className="absolute inset-0 bg-neon/20 rounded-full blur-xl group-hover:bg-neon/30 transition-all duration-300"></div>
-                  <div className="relative bg-gradient-neon p-2 sm:p-3 lg:p-4 rounded-full group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-white" />
+                <div className="relative inline-block mb-4 sm:mb-6">
+                  <div className="absolute inset-0 bg-neon/20 rounded-xl blur-xl group-hover:bg-neon/30 transition-all duration-300"></div>
+                  <div className="relative bg-gradient-neon p-3 sm:p-4 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                 </div>
                 
-                <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4 group-hover:text-neon transition-colors leading-tight">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 group-hover:text-neon transition-colors">
                   {benefit.title}
                 </h3>
                 
-                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </AnimatedSection>
